@@ -2,11 +2,9 @@
 使用selenium驱动chrom浏览器的暴力破解工具
 
 # 介绍：
-基于chrom浏览器的爆破工具，使用selenium控制chromedriver，去查找列表内的元素名称，如果用户名和密码登录框的元素名称匹配成功后会自动填充表单进行暴力破解。
-因为是使用浏览器爆破，不用关心网站是否存在token，数据传输是否加密。
+用于解决JS前端加密、token校验等问题，支持进程池，通过flask作为web接口，用于下发暴力破解任务
 使用方法：
-把需要爆破的登录地址放入target.txt中，username.txt是用户名字典，pass.txt是密码字典。爆破成功后会在success.txt中记录相关信息。
-error.txt是用来记录出现异常的地址，方便后续调试，查找错误。
+启动服务：python3 
 
 # 环境：
 安装chrom浏览器，根据浏览器的版本下载相应版本的chromedriver。
